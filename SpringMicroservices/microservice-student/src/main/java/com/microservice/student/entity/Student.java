@@ -20,7 +20,7 @@ public class Student {
     private String name;
     @Column(name = "last_name")
     private String lastName;
-    @Column(name = "course_id")
     private String email;
+    @Column(name = "course_id")
     private Long courseId;
 }
