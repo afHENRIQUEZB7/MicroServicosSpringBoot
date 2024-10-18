@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "afhb-student", url = "localhost:8090/api/student")
+@FeignClient(name = "afhb-student", url = "localhost:8080/api/student")
 public interface StudentClient {
 
-    @GetMapping("/serach-by-course/{idCourse}")
+    @GetMapping("/search-by-course/{idCourse}")
     List<StudentDTO> findAllStudenByCourse(@PathVariable Long idCourse);
 }

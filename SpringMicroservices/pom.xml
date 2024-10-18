@@ -4,16 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+<!--    Etiqueta para indicarle que va a ser hijo de spring boot y va a heredar-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.3.4</version>
+        <relativePath/>
     </parent>
 
     <groupId>AF.estudio</groupId>
     <artifactId>SpringMicroservices</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+<!-- Etiqueta para indicarle a maven que este proyecto va a ser un contenedor de otras aplicaciones, que no va a tener una funicionalidad   y es el padre de los demás. -->
     <packaging>pom</packaging>
 
 <!--    Definir los modulos que son nuestros microservicios-->
